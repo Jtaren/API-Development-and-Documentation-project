@@ -15,7 +15,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def hello():
-        return jsonify(('message': 'HELLO WORLD'))
+        return jsonify({'message': 'HELLO WORLD'})
 
     @app.route('/smiley')
     def smiley():
